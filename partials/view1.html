@@ -9,5 +9,10 @@
   		<li ng-repeat="person in persons | filter:name">{{person.name}} - {{person.city}}</li>
   	</ul>
   </div>
-
+<div>
+  add customer: 
+  name: <input type="text" ng-model="person.name">
+  city: <input type="text" ng-model="person.city">
+  <button type="submit" ng-click="addPerson()">Submit</button>  
+</div>
   <a href="#/view2">View2</a>

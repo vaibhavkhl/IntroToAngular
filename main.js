@@ -21,4 +21,8 @@ demoApp.controller('SimpleCtrl', function ($scope) {
 	  {name: 'mansi', city: 'mumbai'},
 	  {name: 'nikita', city: 'bilaspur'}
 	];
+
+  $scope.addPerson = function() {
+    $scope.persons.push({name: $scope.person.name, city:$scope.person.city});
+  };
 });
